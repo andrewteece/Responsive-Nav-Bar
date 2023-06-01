@@ -40,7 +40,7 @@ h1 {
   color: #23424a;
   font-weight: 900;
   background-color: #38cfd9;
-  padding: 0.75em 2em;
+  padding: .75em 2em;
   border-radius: 100px;
 }
 
@@ -74,10 +74,15 @@ header {
   padding: 1em 0;
 }
 
+.logo {
+  margin-right: 1em;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
+  flex-grow: 1;
 }
 
 .nav__list {
@@ -89,8 +94,8 @@ header {
   font-size: .9rem;
 }
 
-.nav__item {
-    margin-right: 2em;
+.nav__item + .nav__item {
+    margin-left: 1em;
 }
 
 .nav__link {
@@ -102,7 +107,7 @@ header {
 .nav__link--button {
   background: #fff;
   color: #136c72;
-  padding: 0.25em 1em;
+  padding: .50em 1em;
   border-radius: 10em;
 }
 
